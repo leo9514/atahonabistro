@@ -629,6 +629,9 @@ select:focus {
     .footer {
         margin-top: 30rem;
     }
+    .menu{
+        height: 10vh;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -639,6 +642,9 @@ select:focus {
     .slick-prev::before,
     .slick-next::before {
         display: none;
+    }
+    .menu{
+        height: 10vh;
     }
 }
 
@@ -696,6 +702,9 @@ select:focus {
 
     .copyright {
         font-size: 1.2rem;
+    }
+    .menu{
+        height: 1vh;
     }
 }
 
