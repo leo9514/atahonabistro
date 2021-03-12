@@ -212,7 +212,7 @@ a {
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("images/Portada.jpg") center no-repeat;
+        url("images/Portada.jxr") center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -406,7 +406,7 @@ a {
 .menu-header {
     height: 50vh;
     width: 100%;
-    background: url("images/portada2.jpg") no-repeat center;
+    background: url("images/portada2.jxr") no-repeat center;
     background-size: cover;
 }
 
@@ -711,11 +711,13 @@ select:focus {
 @font-face{
     font-family: brittanic;
     src: url(fuentes/brittanic.TTF);
+    font-display: swap;
 }
 
 @font-face{
     font-family: futura;
     src: url(fuentes/Futura\ Book.otf);
+    font-display: swap;
 }
 
 
