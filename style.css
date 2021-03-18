@@ -818,10 +818,10 @@ select:focus {
         font-size: 1.7rem;
     }
     .menu-container li{
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     .menu-container span{
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 }
 
@@ -842,10 +842,10 @@ select:focus {
         font-size: 3.5rem;
     }
     .menu-container li{
-        font-size: 1.3rem;
+        font-size: 1.7rem;
     }
     .menu-container span{
-        font-size: 1.3rem;
+        font-size: 1.7rem;
     }
 
 }
@@ -867,13 +867,13 @@ select:focus {
         font-size: 3rem;
     }
     .menu-container p{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
     .menu-container li{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .menu-container span{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
 }
