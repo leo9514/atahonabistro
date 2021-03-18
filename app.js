@@ -12,12 +12,3 @@ navLinks.forEach(link => {
     });
 });
 
-// Slideshow
-$(document).ready(function () {
-    $(".carousel").slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 1000,
-        dots: true
-    });
-});

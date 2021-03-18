@@ -4,36 +4,19 @@
         <meta charset="UTF-8" />
         <meta
             name="viewport"
-            content="width=device-width, initial-scale=1, minimum-scale=1"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat&family=Sacramento&display=swap"
-            rel="stylesheet"
-        />
-        <script
-            src="https://kit.fontawesome.com/b699c21610.js"
-            crossorigin="anonymous"
-        ></script>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-            integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI="
-            crossorigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-            integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY="
-            crossorigin="anonymous"
-        />
-        <link
-            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-            rel="stylesheet"
-        />
+            content="width=device-width, initial-scale=1, minimum-scale=1"/>
+        <meta name="description" content="Restaurant & café. Ambiente cálido y acogedor. Vení y disfrutá de ricos platos en un ambiente moderno. Productos frescos con materia prima de alta calidad.">
         
+            <script src="https://kit.fontawesome.com/68731ccca0.js" crossorigin="anonymous"></script>
+       
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
         <link rel="stylesheet" href="style.css" />
         <link rel="shortcut icon" href="images/logoatahona.webp">
-            <title>Atahona Bistro</title>
+
+        
+        <title>Atahona Bistro</title>
+
     </head>
     <body>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -45,6 +28,7 @@
             <div class="container-fluid">
                 <nav class="nav">
                     <a href="index.html">
+                        
                         <h1 class="atahona">ATAHONA BISTRO</h1>
                         <h2 class="restaurant">RESTAURANT & CAFÉ</h2>
                     </a>
@@ -55,7 +39,7 @@
 
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">Home</a>
+                            <a href="index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="#nosotros" class="nav-link">Nosotros</a>
@@ -64,7 +48,10 @@
                             <a href="#ofertas" class="nav-link">Que ofrecemos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#carta" class="nav-link">Nuestra carta</a>
+                            <a href="menu.html" class="nav-link">Nuestra carta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cava.html" class="nav-link">Nuestra cava</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a href="#contacto" class="nav-link">Contacto</a> -->
@@ -81,7 +68,7 @@
         </header>
 
         <main>
-            <div class="hero" id="home">
+            <div class="portada" id="home">
                 <div class="container">
                     <div class="premium-container">
                         <img
@@ -91,20 +78,18 @@
                         />
                     </div>
                 </div>
-
-                <a class="go-top" href="#"><i class="fas fa-arrow-up"></i></a>
             </div>
             
             <section id="nosotros">
                 <div class="container-fluid">
                     <div class="two-columns-grid">
                         <div
-                        class="top-tart"
+                        class="top-img"
                         data-aos="fade-right"
                         data-aos-offset="400"
                         data-aos-duration="1000"
                         >
-                        <img src="images/Mural.webp" alt="Mural" class="tart" />
+                        <img src="images/Mural.webp" alt="Mural" class="img-mural" />
                     </div>
                     <div
                     data-aos="fade-left"
@@ -117,7 +102,6 @@
                     <p class="about-paragraph">
                         Bienvenidos a nuestra casa, un lugar donde podrás disfrutar de exquisitos platos en un ambiente moderno y acogedor. Esperamos que disfrutes de tu visita.
                     </p>
-                    <!-- <a href="#" class="btn">About Us</a> -->
                 </div>
             </div>
             
@@ -134,10 +118,9 @@
                 <p class="about-paragraph">
                    Contamos con un hermoso patio, un lugar lleno de vida y color, un lugar pensado para vos, para que puedas relajarte y disfrutar desde una taza de café hasta el más rico de los platos. 
                 </p>
-                <!-- <a href="#" class="btn">Read More</a> -->
             </div>
             <div
-            class="top-fruits"
+            class="top-img-sec"
             data-aos="fade-left"
             data-aos-offset="400"
             data-aos-duration="1000"
@@ -145,8 +128,7 @@
             <img
             src="images/Plantas-patio.webp"
             alt="Patio"
-            class="fruits"
-            />
+            class="img-sec"/>
             </div>
             </div>
             </div>
@@ -155,7 +137,7 @@
             <!--Seccion "Que ofrecemos"-->
 <section class="offers">
     <div class="container">
-        <h2 class="section-title">Que ofrecemos</h2>
+        <h2 class="section-title welcome">Que ofrecemos</h2>
         <h3 class="section-subtitle">para deleitarte</h3>
         <div class="three-columns-grid">
             <div
@@ -205,7 +187,7 @@
 </section>
             
 <!-- Sección menú -->
-<section class="menu" id="carta">
+<!-- <section class="menu" id="carta">
     <div class="menu-header"></div>
     <div
     class="menu-card"
@@ -229,110 +211,11 @@
         </div>
     </div>
 </div>
-</section>
-
-
-<!-- <section class="book" id="contacto">
-    <div class="container-fluid">
-        <div class="book-card">
-            <h2 class="section-title book-title">
-                Select a Date & Book Now
-            </h2>
-            <h3 class="section-subtitle">
-                We will confirm order via E-mail or Phone
-            </h3>
-            <div class="two-columns-grid">
-                <div class="form-group">
-                    <input
-                    type="text"
-                    id="first"
-                    class="input"
-                    placeholder="First Name*"
-                    />
-                </div>
-                <div class="form-group">
-                    <input
-                    type="text"
-                    id="last"
-                    class="input"
-                    placeholder="Last Name*"
-                    />
-                </div>
-            </div>
-            
-            <div class="two-columns-grid">
-                <div class="form-group">
-                    <input
-                    type="email"
-                    id="email"
-                    class="input"
-                    placeholder="E-mail Address*"
-                    />
-                </div>
-                <div class="form-group">
-                    <input
-                    type="text"
-                    id="phone"
-                    class="input"
-                    placeholder="Phone Number"
-                    />
-                </div>
-            </div>
-            
-            <div class="three-columns-grid">
-                <div class="form-group">
-                    <input type="date" id="date" />
-                </div>
-                <div class="form-group">
-                    <select name="time" id="time">
-                        <option value="">9:00</option>
-                        <option value="">9:30</option>
-                        <option value="">10:00</option>
-                        <option value="">10:30</option>
-                        <option value="">11:00</option>
-                        <option value="">11:30</option>
-                        <option value="">12:00</option>
-                        <option value="">12:30</option>
-                        <option value="">13:00</option>
-                        <option value="">13:30</option>
-                        <option value="">14:00</option>
-                        <option value="">14:30</option>
-                        <option value="">15:00</option>
-                        <option value="">15:30</option>
-                        <option value="">16:00</option>
-                        <option value="">16:30</option>
-                        <option value="">17:00</option>
-                        <option value="">17:30</option>
-                        <option value="">18:00</option>
-                        <option value="">18:30</option>
-                        <option value="">19:00</option>
-                        <option value="">19:30</option>
-                        <option value="">20:00</option>
-                        <option value="">20:30</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <select name="persons" id="persons">
-                        <option value="">Persons*</option>
-                        <option value="">1 Person</option>
-                        <option value="">2 Persons</option>
-                        <option value="">3 Persons</option>
-                        <option value="">4 Persons</option>
-                        <option value="">5 Persons</option>
-                        <option value="">6 Persons</option>
-                        <option value="">7 Persons</option>
-                        <option value="">8 Persons</option>
-                        <option value="">9 Persons</option>
-                        <option value="">10 Persons</option>
-                    </select>
-                </div>
-            </div>
-            <a href="#" class="btn btn-book">Book Now</a>
-        </div>
-    </div>
 </section> -->
 
-<!-- Seccion "bienvenida" -->
+
+ 
+
 
    <!-- Seccion "team" -->
    <!-- <section class="team" id="team">
@@ -408,10 +291,6 @@ eget sodales ultrices.
 
 </main>
 
-<section>
-    
-</section>
-
 <footer class="footer">
     
    <p class="copyright">
@@ -428,16 +307,11 @@ eget sodales ultrices.
 
 
 
-<script
+<!-- <script
             src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
             crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-            integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0="
-            crossorigin="anonymous"
-        ></script>
+        ></script> -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="app.js"></script>
         <script>

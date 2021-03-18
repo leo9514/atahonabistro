@@ -149,7 +149,7 @@ a {
     transform: rotate(-135deg);
 }
 
-.nav-list {
+.nav-list{
     list-style: none;
     position: fixed;
     top: 0;
@@ -166,6 +166,84 @@ a {
     transition: transform 0.5s;
 }
 
+.portada-vino {
+    width: auto;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("images/copa-vino2.jpeg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    text-align: center;
+}
+.portada-menu {
+    width: auto;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("images/fondo-menu.jpeg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    text-align: center;
+}
+
+.menu-container{
+    list-style: none;
+    width: auto;
+    height: auto;
+    /* background-image: linear-gradient(to bottom, rgba(111,172,187,0.274), rgba(111,172,187,0));; */
+    /* background-color: rgba(111, 172, 187, 0.274); */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: "futura";
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 100;
+    
+}
+
+.menu-container h3{
+    text-align: center;
+    font-family: futura;
+    font-size: 2.3rem;
+    margin-top: 2rem;
+}
+
+.menu-container h4{
+    text-align: center;
+    font-family: "futura";
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #d6c076;
+
+}
+.menu-container h2{
+    font-family: "SimplySweet";
+    font-size: 4.5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+
+
+.menu-container li{
+    padding-top: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    text-align: left;
+    font-family: "Cormorant";
+    font-size: 2.5rem;
+}
+
+.menu-container span{
+    float: right;
+}
+
+
 .open .nav-list {
     transform: translateX(0);
 }
@@ -173,6 +251,8 @@ a {
 .nav-item {
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
+
+
 
 .nav-link {
     display: block;
@@ -190,7 +270,7 @@ a {
 
 .icons {
     list-style: none;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff;
     display: flex;
     margin-right: 8rem;
@@ -207,12 +287,12 @@ a {
     margin-right: 1rem;
 }
 
-/* Hero */
-.hero {
+/* Portada */
+.portada {
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("images/Portada.webp") center no-repeat;
+        url("images/Portada.jpg") center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -232,7 +312,7 @@ a {
 
 .title {
     font-size: 12rem;
-    font-family: "Cormorant Garamond";
+    font-family: "Cormorant";
     color: #fff;
 }
 
@@ -240,7 +320,7 @@ a {
     position: fixed;
     width: 60px;
     height: 60px;
-    background: #fff;
+    /* background: #fff; */
     bottom: 2rem;
     right: 2rem;
     display: flex;
@@ -267,7 +347,7 @@ a {
 .section-title {
     text-align: center;
     font-size: 4rem;
-    font-family: "Cormorant Garamond";
+    font-family: "Futura";
     padding-top: 5rem;
 }
 
@@ -291,7 +371,7 @@ a {
 .subtitle {
     font-size: 3rem;
     font-weight: 400;
-    font-family: "Cormorant Garamond";
+    font-family: "Cormorant";
 }
 
 .paragraph {
@@ -306,16 +386,16 @@ a {
     grid-template-columns: 1fr 1fr;
 }
 
-.tart,
-.fruits {
+.img-mural,
+.img-sec {
     width: 70%;
 }
 
-.top-tart {
+.top-img {
     text-align: center;
 }
 
-.top-fruits {
+.top-img-sec {
     text-align: center;
 }
 
@@ -332,13 +412,21 @@ a {
     font-weight: 100;
     font-family: 'futura';
 }
+.welcome-menu{
+    color: #fff;
+    font-weight: 100;
+    font-family: "SimplySweet";
+    font-size: 9rem;
+    text-transform: capitalize;
+}
 
 .about-paragraph {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #afafaf;
     line-height: 1.5;
     margin-top: 3rem;
     margin-bottom: 5rem;
+    font-family: "Cormorant";
 }
 
 .btn {
@@ -374,7 +462,7 @@ a {
 }
 
 .name {
-    font-family: "Cormorant Garamond";
+    font-family: "Cormorant";
     font-size: 1.8rem;
     text-align: center;
     font-weight: bold;
@@ -438,7 +526,7 @@ a {
 .mains h2 {
     color: #ff7417;
     text-align: center;
-    font-family: "Cormorant Garamond";
+    font-family: "Cormorant";
     font-size: 30px;
     margin-top: 5rem;
     font-weight: 300;
@@ -472,28 +560,6 @@ a {
 }
 
 /* Customers */
-.carousel div {
-    margin: 0 auto;
-    width: 600px;
-}
-
-.carousel img {
-    margin: 0 auto;
-}
-
-.slick-prev::before,
-.slick-next::before {
-    color: #bc9321 !important;
-    font-size: 3rem;
-}
-
-.slick-prev {
-    margin-left: 10rem;
-}
-
-.slick-next {
-    margin-right: 10rem;
-}
 
 .customers {
     padding-bottom: 20rem;
@@ -580,7 +646,7 @@ select:focus {
 
 /* Footer */
 .footer {
-    height: 20vh;
+    height: 15vh;
     background-color: #333;
     display: flex;
     justify-content: center;
@@ -589,7 +655,7 @@ select:focus {
 
 .copyright {
     color: #afafaf;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
@@ -599,7 +665,7 @@ select:focus {
         max-width: 500px;
     }
 
-    .tart {
+    .img-mural {
         max-height: 500px;
         object-fit: contain;
     }
@@ -625,30 +691,74 @@ select:focus {
     .customers {
         padding-top: 25rem;
     }
-
-    .footer {
-        margin-top: 30rem;
-    }
     .menu{
         height: 10vh;
     }
+    .copyright {
+        font-size: 1.5rem;
+    }
+    .menu-container h4{
+        font-size: 2.2rem;
+    }
+    .menu-container h2{
+        font-size: 5rem;
+    }
+    .menu-container h3{
+        font-size: 2.5rem;
+    }
+    .menu-container li{
+        font-size: 2.8rem;
+    }
+    .menu-container span{
+        font-size: 2.8rem;
+    }
+    .menu-container p{
+        font-size: 2rem;
+    }
+    
 }
 
 @media only screen and (max-width: 768px) {
+    .icons{
+        font-size: 2rem;
+    }
     .customers {
         padding-top: 30rem;
     }
 
-    .slick-prev::before,
-    .slick-next::before {
-        display: none;
-    }
     .menu{
         height: 10vh;
+    }
+    .copyright {
+        font-size: 1.5rem;
+    }
+    .copyright {
+        font-size: 1.2rem;
+    }
+    .menu-container h4{
+        font-size: 1.8rem;
+    }
+    .menu-container h2{
+        font-size: 4rem;
+    }
+    .menu-container h3{
+        font-size: 1.8rem;
+    }
+    .menu-container li{
+        font-size: 2rem;
+    }
+    .menu-container span{
+        font-size: 2rem;
+    }
+    .menu-container p{
+        font-size: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 500px) {
+    .icons{
+        font-size: 2rem;
+    }
     .premium {
         width: 200px;
     }
@@ -672,10 +782,6 @@ select:focus {
         text-align: center;
     }
 
-    .carousel div {
-        width: 350px;
-    }
-
     .customers {
         padding-top: 45rem;
     }
@@ -696,16 +802,80 @@ select:focus {
         grid-gap: 0;
     }
 
-    .footer {
-        margin-top: 40rem;
+    .menu{
+        height: 10vh;
     }
+    .copyright {
+        font-size: 1.3rem;
+    }
+    .menu-container h4{
+        font-size: 1.6rem;
+    }
+    .menu-container h2{
+        font-size: 4rem;
+    }
+    .menu-container h3{
+        font-size: 1.7rem;
+    }
+    .menu-container li{
+        font-size: 1.6rem;
+    }
+    .menu-container span{
+        font-size: 1.6rem;
+    }
+}
 
+@media only screen and (max-width: 420px){
+    .atahona{
+        font-size: 2.3rem;
+    }
+    .restaurant{
+        font-size: 1.3rem;
+    }
     .copyright {
         font-size: 1.2rem;
     }
-    .menu{
-        height: 1vh;
+    .menu-container h4{
+        font-size: 1.5rem;
     }
+    .menu-container h2{
+        font-size: 3.5rem;
+    }
+    .menu-container li{
+        font-size: 1.3rem;
+    }
+    .menu-container span{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media only screen and (max-width: 350px){
+    .atahona{
+        font-size: 2rem;
+    }
+    .restaurant{
+        font-size: 1rem;
+    }
+    .copyright {
+        font-size: 1.2rem;
+    }
+    .menu-container h4{
+        font-size: 1.5rem;
+    }
+    .menu-container h2{
+        font-size: 3rem;
+    }
+    .menu-container p{
+        font-size: 1.3rem;
+    }
+    .menu-container li{
+        font-size: 1.3rem;
+    }
+    .menu-container span{
+        font-size: 1.3rem;
+    }
+
 }
 
 @font-face{
@@ -720,33 +890,54 @@ select:focus {
     font-display: swap;
 }
 
+@font-face{
+    font-family: Cormorant;
+    src: url(fuentes/cormorant-garamond/CormorantGaramond-SemiBold.ttf);
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Olivia;
+    src: url(fuentes/Olivia.ttf);
+    font-display: swap;
+}
+
+@font-face{
+    font-family: SimplySweet;
+    src: url(fuentes/SimplySweet_Script_regular.ttf);
+}
+
+@font-face{
+    font-family: Braxton;
+    src: url(fuentes/Braxton\ Free.otf);
+}
 
 /* Boton Wsp */
 .float{
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:10rem;
+	bottom:0.5rem;
 	right:2rem;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
-  font-size:30px;
+    font-size:40px;
 	box-shadow: 2px 2px 3px #999;
-  z-index:10000;
+    z-index:10000;
 }
 .float:hover {
 	text-decoration: none;
 	color: #25d366;
-  background-color:#fff;
+    background-color:#fff;
 }
 
 .my-float{
-	margin-top:16px;
+	margin-top:11px;
 }
 
-.mapa-container{
+/* .mapa-container{
     width: 100%;
     height: 350px;
     display: flex;
@@ -762,4 +953,4 @@ select:focus {
     width: 1300px;
     height: 300px;
     
-}
+} */
