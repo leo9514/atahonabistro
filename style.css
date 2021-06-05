@@ -63,6 +63,7 @@ a {
 
 .logo{
     width: 20%;
+    height: 20%;
     opacity: 0.5;
 }
 
@@ -281,12 +282,12 @@ a {
 .icon {
     cursor: pointer;
     color: #fff;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 
 .icon:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 3.5rem;
 }
 
 /* Portada */
